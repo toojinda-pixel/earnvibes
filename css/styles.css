@@ -1,0 +1,331 @@
+body {
+    font-family: 'Alata', sans-serif;
+}
+
+/* =========================================
+   1. BRAND / LOGO (MUNGMING)
+========================================= */
+header nav.navbar .navbar-brand.brand-mungming {
+    font-family: 'Alfa Slab One', cursive, serif;
+    color: #0b9318; 
+    font-size: 42px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+header nav.navbar .navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* =========================================
+   2. HERO BANNER SECTION
+========================================= */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section .hero-bg-img {
+    object-fit: cover;
+    object-position: center; 
+    min-height: 450px;
+    width: 100%;
+}
+
+.hero-section .hero-overlay {
+    z-index: 10;
+    left: 18%; 
+    max-width: 500px;
+}
+
+.hero-section .hero-subtitle {
+    color: #ffd700; 
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.hero-section .hero-title {
+    color: #1a1a1a;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.hero-section .btn-discover {
+    background-color: #0b9318;
+    color: #ffffff;
+    border: none;
+    padding: 12px 32px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.hero-section .btn-discover:hover {
+    background-color: #086d12;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   2.5 CATEGORY BANNERS SECTION
+========================================= */
+.category-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card .category-img-wrapper {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+}
+
+.category-card .category-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-card .category-banner-label {
+    background-color: #0b9318;
+    color: #000000;
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* =========================================
+   3. NEW ARRIVALS SECTION
+========================================= */
+section .new-arrivals-title {
+    color: #0b9318; 
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+section .custom-tabs .nav-link {
+    color: #000000;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 5px 0px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    border: none;
+}
+
+section .custom-tabs .nav-link.active {
+    background: transparent;
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    border-radius: 0;
+}
+
+.product-card {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); 
+    cursor: pointer;
+}
+
+.product-card img {
+    border-radius: 0; 
+    background-color: #f5f5f5; 
+}
+
+.product-card .product-name {
+    color: #d90000; 
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.product-card .product-price {
+    color: #0b9318; 
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* =========================================
+   4. GALLERY & LATEST NEWS
+========================================= */
+.gallery-img-main {
+    object-fit: cover;
+    object-position: center;
+    height: 100%; 
+    width: 100%;
+}
+
+.gallery-img-square {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.gallery-img-landscape {
+    aspect-ratio: 570 / 269;
+    object-fit: cover;
+}
+
+section .latest-news-title {
+    color: #0b9318; 
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+section .latest-news-subtitle {
+    color: #1a1a1a;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.news-card {
+    background-color: #f8f8f8; 
+    padding: 35px 30px 25px 30px;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.news-card .news-headline {
+    color: #d90000; 
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: auto; 
+    padding-bottom: 40px; 
+}
+
+.news-card .news-meta {
+    border-bottom: 2px solid #0b9318; 
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+}
+
+.news-card .news-date {
+    color: #888888;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.news-card .news-read-more {
+    color: #1a1a1a;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.news-card .news-read-more:hover {
+    color: #0b9318; 
+}
+
+/* =========================================
+   5. FOOTER & INSTAGRAM
+========================================= */
+footer .insta-strip-img {
+    object-fit: cover;
+    height: 240px; 
+}
+
+footer .insta-circle {
+    background-color: #00ffff; 
+    color: #1a1a1a;
+    width: 140px; 
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+footer .boxFootMenu {
+    background-color: #f4fff4; 
+    padding: 60px 8% 40px 8%;
+}
+
+footer .footer-links li {
+    color: #777777;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+footer .subscribe-input {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 3px 0 0 3px;
+}
+
+footer .subscribe-btn {
+    background-color: #ffcc00; 
+    color: #1a1a1a;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 0 3px 3px 0;
+    padding: 8px 18px;
+    border: none;
+}
+
+footer .social-icons .social-circle {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+footer .social-icons .social-circle.active {
+    background-color: #ffcc00; 
+}
+
+footer .boxCopyRight {
+    background-color: #0b9318; 
+    height: 60px;
+    color: #ffffff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Responsive Settings */
+@media (max-width: 767px) {
+    .hero-section .hero-overlay {
+        left: 8%;
+    }
+    .hero-section .hero-title {
+        font-size: 2.3rem;
+    }
+    header nav.navbar .navbar-brand.brand-mungming {
+        font-size: 28px;
+    }
+}
