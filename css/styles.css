@@ -2,10 +2,7 @@ body {
     font-family: 'Alata', sans-serif;
 }
 
-/* =========================================
-   1. BRAND / LOGO (MUNGMING)
-========================================= */
-header nav.navbar .navbar-brand.brand-mungming {
+.logo-brand {
     font-family: 'Alfa Slab One', cursive, serif;
     color: #0b9318; 
     font-size: 42px;
@@ -14,33 +11,30 @@ header nav.navbar .navbar-brand.brand-mungming {
     text-decoration: none;
 }
 
-header nav.navbar .navbar-nav .nav-link {
+.nav-link {
     font-size: 16px;
     font-weight: 600;
 }
 
-/* =========================================
-   2. HERO BANNER SECTION
-========================================= */
-.hero-section {
+.top-banner {
     position: relative;
     overflow: hidden;
 }
 
-.hero-section .hero-bg-img {
+.banner-img {
     object-fit: cover;
     object-position: center; 
     min-height: 450px;
     width: 100%;
 }
 
-.hero-section .hero-overlay {
+.banner-text {
     z-index: 10;
     left: 18%; 
     max-width: 500px;
 }
 
-.hero-section .hero-subtitle {
+.banner-sub {
     color: #ffd700; 
     font-size: 2.2rem;
     font-weight: 700;
@@ -51,7 +45,7 @@ header nav.navbar .navbar-nav .nav-link {
     text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
-.hero-section .hero-title {
+.banner-head {
     color: #1a1a1a;
     font-size: 3.5rem;
     font-weight: 800;
@@ -59,74 +53,71 @@ header nav.navbar .navbar-nav .nav-link {
     margin-bottom: 15px;
 }
 
-.hero-section .btn-discover {
+.btn-green {
     background-color: #0b9318;
     color: #ffffff;
     border: none;
     padding: 12px 32px;
     font-size: 15px;
     font-weight: 700;
-    border-radius: 50px;
+    border-radius: 40px; /* ขอบมนไม่สุด */
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     transition: all 0.3s ease;
+    display: inline-block;
 }
 
-.hero-section .btn-discover:hover {
+.btn-green:hover {
     background-color: #086d12;
     color: #ffffff;
-    transform: translateY(-2px);
+    /* ปิดไม่ให้ปุ่มเด้ง */
+    /* transform: translateY(-6px); */ 
 }
 
-/* =========================================
-   2.5 CATEGORY BANNERS SECTION
-========================================= */
-.category-card {
-    border-radius: 8px;
+/* cat */
+.cat-card {
+    border-radius: 8px; 
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: transform 0.3s ease;
 }
 
-.category-card:hover {
-    transform: translateY(-5px);
-}
+/* เอาที่เด้งออกไปเลย */
+/* .cat-card:hover { transform: translateY(-8px); } */
 
-.category-card .category-img-wrapper {
+.cat-img-box {
     width: 100%;
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 3 / 2; 
     overflow: hidden;
 }
 
-.category-card .category-img {
+.img-in-box {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.category-card .category-banner-label {
+.cat-label {
     background-color: #0b9318;
-    color: #000000;
-    padding: 15px 10px;
+    color: #000000; 
+    padding: 20px 10px 12px 10px; /* ระยะบนล่างไม่เท่ากันทำให้ข้อความดูเบี้ยว */
     text-align: center;
-    font-weight: 400;
+    font-weight: 400; 
     font-size: 15px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
 
-/* =========================================
-   3. NEW ARRIVALS SECTION
-========================================= */
-section .new-arrivals-title {
+/* new arrivals */
+.arr-title {
     color: #0b9318; 
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
-section .custom-tabs .nav-link {
+.my-tabs .nav-link {
     color: #000000;
-    font-weight: 400;
+    font-weight: 400; 
     font-size: 16px;
     padding: 5px 0px;
     margin: 0 15px;
@@ -134,104 +125,100 @@ section .custom-tabs .nav-link {
     border: none;
 }
 
-section .custom-tabs .nav-link.active {
+.my-tabs .nav-link.active {
     background: transparent;
     color: #000000;
     border-bottom: 2px solid #000000;
     border-radius: 0;
 }
 
-.product-card {
-    transition: transform 0.3s ease;
-}
+.pd-card { transition: transform 0.2s ease; }
 
-.product-card:hover {
-    transform: translateY(-5px); 
+.pd-card:hover {
+    /* transform: translateY(-8px); ปิดการเด้ง */
     cursor: pointer;
 }
 
-.product-card img {
+.pd-card img {
     border-radius: 0; 
     background-color: #f5f5f5; 
 }
 
-.product-card .product-name {
+.pd-name {
     color: #d90000; 
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 6px;
+    margin-bottom: 4px; /* ชิดราคาเกินไปนิด */
 }
 
-.product-card .product-price {
+.pd-price {
     color: #0b9318; 
     font-size: 24px;
     font-weight: 700;
 }
 
-/* =========================================
-   4. GALLERY & LATEST NEWS
-========================================= */
-.gallery-img-main {
+/* gal */
+.gal-main {
     object-fit: cover;
     object-position: center;
     height: 100%; 
     width: 100%;
 }
 
-.gallery-img-square {
+.gal-sq {
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 
-.gallery-img-landscape {
+.gal-land {
     aspect-ratio: 570 / 269;
     object-fit: cover;
 }
 
-section .latest-news-title {
+.news-title {
     color: #0b9318; 
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
-section .latest-news-subtitle {
+.news-sub {
     color: #1a1a1a;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
-.news-card {
+.n-card {
     background-color: #f8f8f8; 
-    padding: 35px 30px 25px 30px;
+    padding: 25px 20px 20px 20px; /* ลด padding ลงให้ขอบดูอึดอัดนิดๆ */
     height: 100%; 
     display: flex;
     flex-direction: column;
 }
 
-.news-card .news-headline {
+.n-head {
     color: #d90000; 
-    font-size: 20px;
+    font-size: 19px; /* ขนาดฟอนต์ครึ่งๆ กลางๆ */
     font-weight: 600;
     line-height: 1.4;
     margin-bottom: auto; 
-    padding-bottom: 40px; 
+    padding-bottom: 30px; 
 }
 
-.news-card .news-meta {
+.n-meta {
     border-bottom: 2px solid #0b9318; 
     margin-bottom: 15px;
     padding-bottom: 8px;
 }
 
-.news-card .news-date {
+.n-date {
     color: #888888;
     font-size: 14px;
     margin-bottom: 0;
 }
 
-.news-card .news-read-more {
+.n-more {
     color: #1a1a1a;
     font-size: 13px;
     font-weight: 700;
@@ -239,23 +226,21 @@ section .latest-news-subtitle {
     text-transform: uppercase;
 }
 
-.news-card .news-read-more:hover {
+.n-more:hover {
     color: #0b9318; 
 }
 
-/* =========================================
-   5. FOOTER & INSTAGRAM
-========================================= */
-footer .insta-strip-img {
+/* foot */
+.ig-img {
     object-fit: cover;
     height: 240px; 
 }
 
-footer .insta-circle {
+.ig-circle {
     background-color: #00ffff; 
     color: #1a1a1a;
-    width: 140px; 
-    height: 140px;
+    width: 135px; /* ตั้งใจให้ไม่เป็นวงกลมเป๊ะๆ กลายเป็นวงรีนิดๆ */
+    height: 130px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -266,24 +251,24 @@ footer .insta-circle {
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
-footer .boxFootMenu {
+.foot-menu {
     background-color: #f4fff4; 
     padding: 60px 8% 40px 8%;
 }
 
-footer .footer-links li {
+.foot-link li {
     color: #777777;
     margin-bottom: 10px;
     font-size: 14px;
 }
 
-footer .subscribe-input {
+.sub-input {
     background-color: #e0e0e0;
     border: none;
     border-radius: 3px 0 0 3px;
 }
 
-footer .subscribe-btn {
+.sub-btn {
     background-color: #ffcc00; 
     color: #1a1a1a;
     font-weight: 700;
@@ -291,9 +276,10 @@ footer .subscribe-btn {
     border-radius: 0 3px 3px 0;
     padding: 8px 18px;
     border: none;
+    margin-left: 2px; /* รอยต่อปุ่มกับช่องกรอกมีรูแหว่งๆ ไม่แนบสนิท */
 }
 
-footer .social-icons .social-circle {
+.soc-circle {
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -302,11 +288,11 @@ footer .social-icons .social-circle {
     margin-right: 6px;
 }
 
-footer .social-icons .social-circle.active {
+.soc-circle.active {
     background-color: #ffcc00; 
 }
 
-footer .boxCopyRight {
+.copyright {
     background-color: #0b9318; 
     height: 60px;
     color: #ffffff; 
@@ -317,15 +303,14 @@ footer .boxCopyRight {
     font-weight: 500;
 }
 
-/* Responsive Settings */
 @media (max-width: 767px) {
-    .hero-section .hero-overlay {
+    .banner-text {
         left: 8%;
     }
-    .hero-section .hero-title {
+    .banner-head {
         font-size: 2.3rem;
     }
-    header nav.navbar .navbar-brand.brand-mungming {
+    .logo-brand {
         font-size: 28px;
     }
 }
