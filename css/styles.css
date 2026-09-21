@@ -9,7 +9,7 @@ body {
 
 .logo-brand {
     font-family: 'Alfa Slab One', cursive, serif;
-    color: #000080; 
+    color: #088500; 
     font-size: 42px;
     letter-spacing: 1px;
     font-weight: normal;
@@ -42,7 +42,7 @@ body {
 }
 
 .banner-sub {
-    color: #000080; 
+    color: #FFC507; 
     font-size: 2.2rem;
     font-weight: 700;
     letter-spacing: 1px;
@@ -61,7 +61,7 @@ body {
 }
 
 .btn-green {
-    background-color: #000080;
+    background-color: #088500;
     color: #ffffff;
     border: none;
     padding: 12px 32px;
@@ -260,7 +260,7 @@ body {
 }
 
 .foot-menu {
-    background-color: #cdf7f7; 
+    background-color: #F3FFF3; 
     padding: 60px 8% 40px 8%;
 }
 
@@ -277,8 +277,8 @@ body {
 }
 
 .sub-btn {
-    background-color: #000080; 
-    color: #ffffff;
+    background-color: #088500; 
+    color: #1a1a1a;
     font-weight: 700;
     font-size: 12px;
     border-radius: 0 3px 3px 0;
@@ -301,9 +301,9 @@ body {
 }
 
 .copyright {
-    background-color: #000080; 
+    background-color: #088500; 
     height: 60px;
-    color: #ffffff; 
+    color: #1a1a1a; 
     display: flex;
     align-items: center;
     justify-content: center;
